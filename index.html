@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Minha Pagina</title>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar navbar-dark text-white">Consulta CEP</a>
+        <div class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" id="cep" type="search" placeholder="CEP" id="cep">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="consultaCep()">Buscar</button>
+        </div>
+     </nav>
+     <div class="container barra-progresso" style="margin: top 80px;">
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+      </div>
+     </div>
+
+     <div class="container cep" style="margin-top: 20;">
+        <h3 id="titulo_cep"></h3>
+        <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Rua</th>
+                <th scope="col">Bairro</th>
+                <th scope="col">Cidade</th>
+                <th scope="col">Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="logradouro"></td>
+                <td id="bairro"></td>
+                <td id="localidade"></td>
+                <td id="uf"></td>
+              </tr>
+        
+            </tbody>
+          </table>
+     </div>
+     <footer class="footer">Desenvolvido por <strong>JLCoder</strong></footer>
+
+</body>
+</html>
